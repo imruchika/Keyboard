@@ -6,14 +6,16 @@ body{
 .container{
     border: 1px solid black;
     border-radius: 5px;
+    width: 1060px;
+    margin-left: 100px;
 }
 .keyboard-layout{
     background-color: rgb(238, 244, 243);
-   height: 580px;
    width: 1000px;
-   margin: 30px 20px 30px 130px;
+   margin: 30px 0px 30px 30px;
    padding: 3px 0px 3px 0px;
    display:grid;
+   row-gap: 10px;
    justify-content: center;
    align-items: center;
    border-radius: 10px;
@@ -41,14 +43,14 @@ h1{
     grid-template-rows: auto;
     text-align: center;
 }
-.row2{
+.row{
     
     display: grid;
     grid-template-columns:auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
     gap: 9px;
     align-items: center;
 }
-.row2-key{
+.row-keys{
     padding: 20px;
 }
 #backspace{
@@ -72,7 +74,7 @@ h1{
 #enter{
     display: grid;
     grid-column-start:13;
-    grid-column-end: 16;
+    grid-column-end: 17;
 }
 #shift-left{
     display: grid;
@@ -103,7 +105,7 @@ h1{
     padding: 0px 25px 0px 25px;
     border: 1px solid wheat;
     padding: 5px;
-    background-color:aliceblue;
+    background-color:white;
     border-radius: 4px;    
     text-align: center;
     box-shadow: 2px 2px 8px  rgb(165, 140, 93);
@@ -115,3 +117,22 @@ h1{
     padding:1.26rem 0.5rem 1.26rem 0.5rem;
 
 }
+
+@media only screen and (max-width:600px)
+{
+    .row1{grid-area: 1px/span6;}
+    .row{grid-area:1px/span6;}
+}
+
+@media only screen and (min-width:600px)
+{
+    .row1{grid-area: 1px/span6;}
+    .row{grid-area:1px/span6;}
+
+}
+
+@media only screen and (min-width:768px)
+{
+    .row1{grid-area: 1px/span8;}
+    .row{grid-area:1px/span8;}    
+}*/
