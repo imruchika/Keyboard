@@ -118,21 +118,19 @@ h1{
 
 }
 
-@media only screen and (max-width:600px)
-{
-    .row1{grid-area: 1px/span6;}
-    .row{grid-area:1px/span6;}
+@media (max-width: 600px) {
+    .keyboard-layout {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+    .key {
+        padding: 8px;
+    }
 }
-
-@media only screen and (min-width:600px)
-{
-    .row1{grid-area: 1px/span6;}
-    .row{grid-area:1px/span6;}
-
+@media (max-width: 400px) {
+    .keyboard-layout {
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    }
+    .key {
+        padding: 6px;
+    }
 }
-
-@media only screen and (min-width:768px)
-{
-    .row1{grid-area: 1px/span8;}
-    .row{grid-area:1px/span8;}    
-}*/
