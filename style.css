@@ -118,19 +118,3 @@ h1{
 
 }
 
-@media (max-width: 600px) {
-    .keyboard-layout {
-        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-    }
-    .key {
-        padding: 8px;
-    }
-}
-@media (max-width: 400px) {
-    .keyboard-layout {
-        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    }
-    .key {
-        padding: 6px;
-    }
-}
